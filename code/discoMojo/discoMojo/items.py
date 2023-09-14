@@ -8,7 +8,5 @@ import scrapy
 
 class Emoji(scrapy.Item):
     # define the fields for your item here like:
-     emoji_links = scrapy.Field()
-
-class Urls(scrapy.Item):
-    emoji_pages = scrapy.Field()
+#     image_urls = scrapy.Field()
+#     images = scrapy.Field()

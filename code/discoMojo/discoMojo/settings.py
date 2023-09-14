@@ -66,6 +66,9 @@ ROBOTSTXT_OBEY = True
 #    "discoMojo.pipelines.DiscomojoPipeline": 300,
 #}
 
+ITEM_PIPELINES = {"discoMojo.pipelines.customImagePipeline": 1}
+IMAGES_STORE = 'local_folder'
+
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
@@ -91,6 +94,3 @@ ROBOTSTXT_OBEY = True
 REQUEST_FINGERPRINTER_IMPLEMENTATION = "2.7"
 TWISTED_REACTOR = "twisted.internet.asyncioreactor.AsyncioSelectorReactor"
 FEED_EXPORT_ENCODING = "utf-8"
-
-FEED_URI='animoji.csv'
-FEED_FORMAT='csv'

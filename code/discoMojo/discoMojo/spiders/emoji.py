@@ -1,23 +1,19 @@
 import scrapy
-from discoMojo.items import Emoji
-
 
 class EmojiSpider(scrapy.Spider):
     name = 'emoji'
-    allowed_domains = ['discordmojis.com']
-    start_urls = [
-    ]
+    start_urls = ["https://discordmojis.com/"]
 
 
     def parse(self, response):
-        emoji = Emoji()
-        url_array = response.xpath("//img/@src").getall()
-        emoji_csv = ""
 
-        for i in url_array:
-            i = i.split('?')[0]
-            emoji_csv += "\n"
-            emoji_csv += i
+        for link in response.xpath('//div[@class="seemore"]/a/@href').getall():
+            yield response.follow(link, callback=self.parse)
 
-        emoji["emoji_links"] = emoji_csv
-        return emoji
+            emoji = list()
+            for e in response.xpath("//img/@src").getall():
+                e = e.split('?')[0]
+                emoji.append(e)
+                yield {
+                    'image_urls' : emoji
+                }
