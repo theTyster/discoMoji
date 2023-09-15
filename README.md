@@ -1,15 +1,13 @@
 # discoMoji
 
-Repo for scraping emojis from discordmojis.com/slackmoji.com (They are the same site 🤫)
+Repo for scraping emojis from discordmojis.com/slackmoji.com (They are the same site. 🤫)
 
----
 # Dependancies
 
 You will need to have python installed on your machine.
 You can download it here:
 https://www.python.org/downloads/
 
----
 
 # Usage
 To run the scraper yourself: (Linux and Mac only. (Sorry, Window people. 🫣🪟))
