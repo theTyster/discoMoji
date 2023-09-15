@@ -2,11 +2,3 @@
 #
 # See documentation in:
 # https://docs.scrapy.org/en/latest/topics/items.html
-
-import scrapy
-
-
-class Emoji(scrapy.Item):
-    # define the fields for your item here like:
-#     image_urls = scrapy.Field()
-#     images = scrapy.Field()

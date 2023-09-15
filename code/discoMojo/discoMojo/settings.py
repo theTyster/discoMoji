@@ -66,9 +66,6 @@ ROBOTSTXT_OBEY = True
 #    "discoMojo.pipelines.DiscomojoPipeline": 300,
 #}
 
-ITEM_PIPELINES = {"discoMojo.pipelines.customImagePipeline": 1}
-IMAGES_STORE = 'local_folder'
-
 # Enable and configure the AutoThrottle extension (disabled by default)
 # See https://docs.scrapy.org/en/latest/topics/autothrottle.html
 #AUTOTHROTTLE_ENABLED = True
