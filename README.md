@@ -4,9 +4,17 @@ Repo for scraping emojis from discordmojis.com/slackmoji.com (They are the same 
 
 # Dependancies
 
-You will need to have python installed on your machine.
+1. You will need to have python installed on your machine.
+
 You can download it here:
 https://www.python.org/downloads/
+
+2. you will also need a [package](https://www.gnu.org/software/wget/) called `wget`.
+
+You can install this with [Homebrew](https://brew.sh/) if you need to:
+```sh
+brew install wget
+```
 
 
 # Usage
